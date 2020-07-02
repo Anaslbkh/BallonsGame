@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="sel">
+        <option class="option" value="tdi">tdi</option>
+        <option class="option" value="tri">tri</option>
+        <option class="option" value="tva">tva</option>
+        <option class="option" value="tsg">tsg</option>
+    </select>
+    <p class="pp"></p>
+    <script>
+   /*     let sele=document.querySelector('#sel');
+          sele.addEventListener('click',function(){
+        let sel=document.querySelector('#sel').value;
+        let pp=document.querySelector('.pp');
+             pp.textContent=sel;
+        });*/
+       let mm=document.querySelectorAll('.option');
+        console.log(mm.value);
+        for(let i=0;i<mm.length;i++){
+           mm[i].addEventListener('click',function(){
+            var qs=document.querySelector('.pp');
+            qs.textContent=mm[i].value;
+       
+        
+        }); }
+    </script>
+</body>
+</html>
